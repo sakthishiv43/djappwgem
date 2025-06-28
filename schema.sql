@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS journal_entries;
+
+CREATE TABLE journal_entries (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "content" TEXT NOT NULL
+);
